@@ -1,0 +1,17 @@
+.flag{
+    width: 400px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    justify-content: center;  
+    background-color: white;
+} 
+
+.merah {
+    background-color: red;
+    border: 1px solid;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}

@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.bapak1, .bapak2, .bapak3{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    color: white;
+    /* flex-direction: column; */
+}
+
+
+.anak1, .anak2, .anak3{
+    width: 100px;
+    height: 100px;
+    margin: 1px 1px 0 0;
+    background-color: blue;
+}
+
+.anak4, .anak5, .anak6{
+    width: 100px;
+    height: 100px;
+    margin: 1px 1px 0 0;
+    background-color: green;
+}
+
+.anak7, .anak8, .anak9{
+    width: 100px;
+    height: 100px;
+    margin: 1px 1px 0 0;
+    background-color: red;
+}
+
