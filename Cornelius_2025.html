@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Best of 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        glass: 'rgba(255, 255, 255, 0.05)',
+                        glassBorder: 'rgba(255, 255, 255, 0.1)',
+                    },
+                    animation: {
+                        'fade-in-down': 'fadeInDown 0.8s ease-out forwards',
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        fadeInDown: {
+                            '0%': { opacity: '0', transform: 'translateY(-20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-glow {
+                text-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+            }
+            .glass-card {
+                @apply bg-glass backdrop-blur-xl border border-glassBorder shadow-2xl;
+            }
+        }
+        
+        body {
+            background-color: #0f172a;
+            background-image: 
+                radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+                radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
+                radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body class="text-white selection:bg-indigo-500 selection:text-white flex items-center justify-center p-6 h-screen overflow-hidden">
+
+    <!-- Decorative Glows -->
+    <div class="fixed top-20 left-20 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-[128px] opacity-20 animate-pulse-slow"></div>
+    <div class="fixed bottom-20 right-20 w-72 h-72 bg-indigo-500 rounded-full mix-blend-multiply filter blur-[128px] opacity-20 animate-pulse-slow animation-delay-2000"></div>
+
+    <!-- Main Container -->
+    <main class="relative z-10 max-w-2xl w-full glass-card rounded-3xl p-8 md:p-12 overflow-hidden transform transition-all hover:scale-[1.01] duration-500">
+        
+        <!-- Decoration Line -->
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-indigo-500 to-transparent opacity-50"></div>
+
+        <!-- Header -->
+        <header class="mb-10 text-center animate-fade-in-down">
+            <span class="inline-block py-1 px-3 rounded-full bg-indigo-500/20 text-indigo-300 text-xs font-semibold tracking-wider mb-4 border border-indigo-500/30 uppercase">
+                2025 Highlights
+            </span>
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-2">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 text-glow">
+                    Unlocking Dreams
+                </span>
+            </h1>
+            <p class="text-slate-400 text-sm md:text-base font-light">My journey into Project KOKORO</p>
+        </header>
+
+        <!-- Content -->
+        <article class="prose prose-invert prose-lg max-w-none">
+            <p class="animate-fade-in-up text-slate-200 leading-relaxed text-left md:text-lg [animation-delay:200ms]">
+                <span class="text-3xl float-left mr-2 mt-[-5px]">✨</span>
+                Pengalaman terbaik di <strong class="text-white">2025</strong> yang aku rasakan adalah saat bulan Desember akhir (aku lupa tanggalnya kapan) yang mana saya mulai buat project <span class="bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent font-bold">KOKORO</span>, dan jujur rasanya happy campur excited parah. 
+            </p>
+            
+            <p class="animate-fade-in-up mt-6 text-slate-300 leading-relaxed [animation-delay:400ms] border-l-4 border-indigo-500/50 pl-4 py-1 bg-indigo-500/5 rounded-r-lg">
+                Ini tuh beneran <em class="text-white not-italic font-semibold">dream project</em> yang udah aku angan-angin sejak awal masuk SMK, dan akhirnya sekarang masuk ke tahap development.
+            </p>
+
+            <p class="animate-fade-in-up mt-6 text-slate-200 leading-relaxed [animation-delay:600ms]">
+                Ada rasa <span class="text-yellow-200">pride</span> tersendiri karena sesuatu yang dulu cuma halu di kepala, sekarang literally lagi aku bangun sendiri. Rasanya bener-bener <span class="underline decoration-pink-500 decoration-2 underline-offset-4">satisfying</span> pas akhirnya bisa mulai eksekusi mimpi lama aku ini secara nyata. 🚀
+            </p>
+        </article>
+
+        <!-- Footer / Signature -->
+        <div class="mt-12 pt-6 border-t border-white/10 flex justify-between items-center text-sm text-slate-500 animate-fade-in-up [animation-delay:800ms]">
+            <span>Best of 2025</span>
+            <span class="font-medium text-slate-400">KOKORO Project</span>
+        </div>
+    </main>
+
+</body>
+</html>
